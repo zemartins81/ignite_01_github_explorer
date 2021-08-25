@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "José C. Martins <jcmartins81@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -14,6 +18,7 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
     "git-commit-msg-linter": "^3.2.8",
     "html-webpack-plugin": "^5.3.2",
     "webpack": "^5.51.1",

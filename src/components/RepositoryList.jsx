@@ -1,16 +1,16 @@
-const repositoryName = "unform";
+import { RepositoryItem } from "./RepositoryItem";
 
+const repository = {
+  name: "unform",
+  description: "Forms in React",
+  link: "https://github.com/jcmartins81",
+};
 export function RepositoryList() {
   return (
     <section className="repository-list">
       <h1>Lista de Repositório</h1>
       <ul>
-        <li>
-          <strong>{repositoryName}</strong>
-          <p>Forms in React</p>
-
-          <a href="">Acessar repositório</a>
-        </li>
+        <RepositoryItem repository={repository} />
       </ul>
     </section>
   );
